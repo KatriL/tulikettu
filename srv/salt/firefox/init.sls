@@ -1,5 +1,8 @@
-pkg.installed:
-  - ssh
+installation:
+  pkg.installed:
+    - pkgs:
+      - firefox
+      - openssh-server
 
 /etc/firefox/syspref.js:
   file.managed:
