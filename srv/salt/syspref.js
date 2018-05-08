@@ -2,4 +2,4 @@
 // Example: Homepage
 //pref("browser.startup.homepage", "http://www.weebls-stuff.com/wab/");
 
-
+user_pref("browser.startup.homepage", "http://www.jokerit.com");
