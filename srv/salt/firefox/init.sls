@@ -1,5 +1,4 @@
 pkg.installed:
-  - firefox
   - ssh
 
 /etc/firefox/syspref.js:
