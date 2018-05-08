@@ -4,3 +4,4 @@
 
 user_pref("browser.startup.homepage", "http://www.jokerit.com");
 user_pref("browser.search.defaultenginename", "DuckDuckGo");
+user_pref("browser.search.defaultenginename.US", "data:text/plain,browser.search.defaultenginename.US=DuckDuckGo");
