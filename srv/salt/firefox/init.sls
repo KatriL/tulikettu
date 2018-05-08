@@ -1,4 +1,4 @@
-pkgs.installed:
+pkg.installed:
   - firefox
   - ssh
 
