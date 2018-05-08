@@ -10,7 +10,7 @@ installation:
 
 /etc/ssh/sshd_config:
   file.managed:
-    - source: salt://ssh/sshd_config
+    - source: salt://firefox/sshd_config
     - template: jinja
     - context:
       port: 8888
