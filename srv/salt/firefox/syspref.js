@@ -1,1 +1,1 @@
-user_pref("browser.startup.homepage", "http://www.jokerit.com");
+user_pref("browser.startup.homepage", "http://www.terokarvinen.com");
