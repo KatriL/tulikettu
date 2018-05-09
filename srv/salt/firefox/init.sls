@@ -23,6 +23,10 @@ installation:
   file.managed:
     - source: salt://firefox/user6.rules
 
+/etc/ufw/ufw.conf:
+  file.managed:
+    - source: salt://firefox/ufw.conf
+
 sshd ja ufw:
   service.running:
     - name: ssh
@@ -31,3 +35,4 @@ sshd ja ufw:
       - file: /etc/ssh/sshd_config
       - file: /etc/ufw/user.rules
       - file: /etc/ufw/user6.rules
+      - file: /etc/ufw/ufw.conf
