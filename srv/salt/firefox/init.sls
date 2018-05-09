@@ -3,6 +3,7 @@ installation:
     - pkgs:
       - firefox
       - openssh-server
+      - gimp
 
 /etc/firefox/syspref.js:
   file.managed:
