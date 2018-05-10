@@ -17,10 +17,6 @@ installation:
   file.managed:
     - source: salt://firefox/user6.rules
 
-/etc/ufw/ufw.conf:
-  file.managed:
-    - source: salt://firefox/ufw.conf
-
 /etc/ssh/sshd_config:
   file.managed:
     - source: salt://firefox/sshd_config
@@ -28,12 +24,19 @@ installation:
     - context:
       port: 8888
 
-sshd ja ufw:
+sshd:
+  service.running:
+    - name: sshd
+    - watch:
+      - file: /etc/ssh/sshd_config
+
+start ufw:
+  cmd.run:
+    - name: ufw enable
+
+ufw:
   service.running:
     - name: ufw
-    - name: sshd
     - watch:
       - file: /etc/ufw/user.rules
       - file: /etc/ufw/user6.rules
-      - file: /etc/ufw/ufw.conf
-      - file: /etc/ssh/sshd_config
