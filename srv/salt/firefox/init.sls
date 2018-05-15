@@ -32,7 +32,7 @@ sshd:
 
 start ufw:
   cmd.run:
-    - name: ufw enable
+    - name: "ufw --force enable"
 
 ufw:
   service.running:
